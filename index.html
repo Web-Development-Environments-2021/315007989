@@ -1,193 +1,322 @@
 <!DOCTYPE html>
-<html>
+
 <head>
-<link rel="stylesheet" type="text/css" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
+  />
 </head>
+
 <body>
-<div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
-</div>
-		  
-<section id="about" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="playlist" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="like" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="qrcoder" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
-<br/>
-<br/>
-<br/>
-</section>
+  <nav class="navbar">
+    <ul class="navbar-nav">
+      <li class="logo">
+        <a href="#" class="nav-link">
+          <span class="link-text logo-text">Menu</span>
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fad"
+            data-icon="angle-double-right"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            class="svg-inline--fa fa-angle-double-right fa-w-14 fa-5x"
+          >
+            <g class="fa-group">
+              <path
+                fill="currentColor"
+                d="M224 273L88.37 409a23.78 23.78 0 0 1-33.8 0L32 386.36a23.94 23.94 0 0 1 0-33.89l96.13-96.37L32 159.73a23.94 23.94 0 0 1 0-33.89l22.44-22.79a23.78 23.78 0 0 1 33.8 0L223.88 239a23.94 23.94 0 0 1 .1 34z"
+                class="fa-secondary"
+              ></path>
+              <path
+                fill="currentColor"
+                d="M415.89 273L280.34 409a23.77 23.77 0 0 1-33.79 0L224 386.26a23.94 23.94 0 0 1 0-33.89L320.11 256l-96-96.47a23.94 23.94 0 0 1 0-33.89l22.52-22.59a23.77 23.77 0 0 1 33.79 0L416 239a24 24 0 0 1-.11 34z"
+                class="fa-primary"
+              ></path>
+            </g>
+          </svg>
+        </a>
+      </li>
 
 
-<script type="text/javascript">
-$(function(){
-  $("#nav a").click(function(e){
-    e.preventDefault();
-    $('html,body').scrollTo(this.hash,this.hash); 
-  });
-});
-</script>
-<script type="text/javascript">
- $(document).scroll(function() {
-    $('#menu').toggle($(this).scrollTop()>1000)
- });​
- </script>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <svg
+            aria-hidden="true" 
+            focusable="false" 
+            data-prefix="far" 
+            data-icon="address-card" 
+            class="svg-inline--fa fa-address-card fa-w-18" 
+            role="img" 
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 576 512"><path fill="currentColor" d="M528 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm0 400H48V80h480v352zM208 256c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm-89.6 128h179.2c12.4 0 22.4-8.6 22.4-19.2v-19.2c0-31.8-30.1-57.6-67.2-57.6-10.8 0-18.7 8-44.8 8-26.9 0-33.4-8-44.8-8-37.1 0-67.2 25.8-67.2 57.6v19.2c0 10.6 10 19.2 22.4 19.2zM360 320h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8H360c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8zm0-64h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8H360c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8zm0-64h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8H360c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8z"
+            class="fa-primary"></path></svg>
+            </path></svg>
+          <span class="link-text" >
+            About me
+          </span>
+        </a>
+        
+        <li class="nav-item">
+          <a href="#PhotoSection" class="nav-link">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="images" class="svg-inline--fa fa-images fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M480 416v16c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V176c0-26.51 21.49-48 48-48h16v208c0 44.112 35.888 80 80 80h336zm96-80V80c0-26.51-21.49-48-48-48H144c-26.51 0-48 21.49-48 48v256c0 26.51 21.49 48 48 48h384c26.51 0 48-21.49 48-48zM256 128c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-96 144l55.515-55.515c4.686-4.686 12.284-4.686 16.971 0L272 256l135.515-135.515c4.686-4.686 12.284-4.686 16.971 0L512 208v112H160v-48z"
+              class="fa-primary"></path></svg>
+              </path></svg>
+            <span class="link-text" >
+              Photos
+            </span>
+          </a>
+        </li>
+  
+      </li>
+      <li class="nav-item">
+        <a href="#Music" class="nav-link">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="music" class="svg-inline--fa fa-music fa-w-1" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M470.38 1.51L150.41 96A32 32 0 0 0 128 126.51v261.41A139 139 0 0 0 96 384c-53 0-96 28.66-96 64s43 64 96 64 96-28.66 96-64V214.32l256-75v184.61a138.4 138.4 0 0 0-32-3.93c-53 0-96 28.66-96 64s43 64 96 64 96-28.65 96-64V32a32 32 0 0 0-41.62-30.49z"
+            class="fa-primary"></path></svg>
+            </path></svg>
+          <span class="link-text" >
+            My Playlist
+          </span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="thumbs-up" class="svg-inline--fa fa-thumbs-up fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M104 224H24c-13.255 0-24 10.745-24 24v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V248c0-13.255-10.745-24-24-24zM64 472c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zM384 81.452c0 42.416-25.97 66.208-33.277 94.548h101.723c33.397 0 59.397 27.746 59.553 58.098.084 17.938-7.546 37.249-19.439 49.197l-.11.11c9.836 23.337 8.237 56.037-9.308 79.469 8.681 25.895-.069 57.704-16.382 74.757 4.298 17.598 2.244 32.575-6.148 44.632C440.202 511.587 389.616 512 346.839 512l-2.845-.001c-48.287-.017-87.806-17.598-119.56-31.725-15.957-7.099-36.821-15.887-52.651-16.178-6.54-.12-11.783-5.457-11.783-11.998v-213.77c0-3.2 1.282-6.271 3.558-8.521 39.614-39.144 56.648-80.587 89.117-113.111 14.804-14.832 20.188-37.236 25.393-58.902C282.515 39.293 291.817 0 312 0c24 0 72 8 72 81.452z"
+            class="fa-primary"></path></svg>
+            </path></svg>
+          <span class="link-text" >
+            Like
+          </span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="qrcode" class="svg-inline--fa fa-qrcode fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 224h192V32H0v192zM64 96h64v64H64V96zm192-64v192h192V32H256zm128 128h-64V96h64v64zM0 480h192V288H0v192zm64-128h64v64H64v-64zm352-64h32v128h-96v-32h-32v96h-64V288h96v32h64v-32zm0 160h32v32h-32v-32zm-64 0h32v32h-32v-32z"
+            class="fa-primary"></path></svg>
+            </path></svg>
+          <span class="link-text" >
+            QR Code
+          </span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="question-circle" class="svg-inline--fa fa-question-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"
+            class="fa-primary"></path></svg>
+            </path></svg>
+          <span class="link-text" >
+            Q&A
+          </span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="#ContactMe" class="nav-link">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" class="svg-inline--fa fa-envelope fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
+          class="fa-primary"></path></svg>
+          <span class="link-text" >
+            Contact Me
+          </span>
+        </a>
+      </li>
+
+      
+
+
+
+
+    </ul>
+   
+  </nav>
+
+  <main>
+    <h1 data-text="CSS is Cool">CSS is Cool</h1>
+
+    <p>
+      I'm baby kale chips affogato ennui lumbersexual, williamsburg paleo quinoa
+      iceland normcore tumeric. Kitsch coloring book retro, seitan schlitz
+      tattooed biodiesel vexillologist neutra. Synth mumblecore deep v, umami
+      selfies normcore gluten-free snackwave. Seitan ramps drinking vinegar
+      venmo keytar, humblebrag VHS post-ironic tacos godard pour-over.
+    </p>
+    <p>
+      Sartorial kogi taxidermy, kickstarter synth yr irony ennui everyday carry
+      retro helvetica stumptown cloud bread squid echo park. Etsy cloud bread
+      sartorial quinoa tacos beard mumblecore shaman tumblr pop-up. Twee retro
+      fingerstache af helvetica pabst 8-bit leggings taiyaki portland ramps tbh
+      tumblr vinyl. Neutra humblebrag bushwick portland subway tile plaid, offal
+      scenester flexitarian cliche squid small batch palo santo. Palo santo meh
+      adaptogen +1 3 wolf moon, listicle brunch ethical fanny pack everyday
+      carry fam. Offal fingerstache taxidermy, man bun venmo PBR&amp;B helvetica
+      thundercats everyday carry tote bag artisan cray wolf jianbing.
+    </p>
+    <p>
+      Taxidermy thundercats whatever austin. VHS helvetica ethical, dreamcatcher
+      enamel pin YOLO shabby chic locavore man bun crucifix pabst chillwave
+      pop-up vegan. Air plant mlkshk ethical echo park tumeric, whatever
+      crucifix godard scenester locavore pork belly yuccie vape. +1 gochujang
+      put a bird on it, pork belly whatever selfies vaporware occupy banh mi
+      normcore VHS. Cornhole normcore hashtag tilde. Hell of yr try-hard DIY raw
+      denim banjo, enamel pin irony polaroid copper mug tofu. Dreamcatcher lomo
+      literally 90's before they sold out, 3 wolf moon banh mi seitan chambray
+      cliche offal tote bag occupy pug.
+    </p>
+    <p>
+      Post-ironic hot chicken salvia yr yuccie ugh cold-pressed keffiyeh franzen
+      viral taxidermy mustache slow-carb crucifix vape. Taiyaki yuccie hell of
+      tacos PBR&amp;B, kitsch meggings tbh truffaut kickstarter mixtape af kogi.
+      Fingerstache vegan tofu waistcoat gentrify cray. Drinking vinegar 3 wolf
+      moon health goth craft beer master cleanse. Letterpress health goth 8-bit
+      chillwave craft beer brooklyn. Chicharrones master cleanse 8-bit,
+      mumblecore copper mug messenger bag poutine lomo kale chips flannel. Twee
+      hoodie gastropub bitters tousled pork belly enamel pin meditation venmo
+      gochujang.
+    </p>
+    <p>
+      Next level selfies cronut ethical. Tofu tumblr you probably haven't heard
+      of them, man braid literally forage swag chillwave. Pug yr flannel
+      tumeric. Coloring book yr chillwave snackwave, shoreditch shaman gentrify
+      typewriter tumeric DIY copper mug small batch. Scenester waistcoat YOLO
+      hexagon kombucha poke 8-bit meditation. Selvage scenester forage
+      williamsburg. Hoodie fingerstache tacos mustache, hashtag quinoa next
+      level sartorial craft beer retro disrupt lo-fi.
+    </p>
+    <p>
+      YOLO twee keytar farm-to-table flexitarian cardigan polaroid lumbersexual
+      adaptogen drinking vinegar echo park dreamcatcher. Brunch shoreditch
+      dreamcatcher iPhone knausgaard plaid edison bulb letterpress ethical yr
+      fanny pack. Typewriter portland woke glossier cronut, post-ironic migas
+      gentrify letterpress cray brunch lyft 8-bit master cleanse. Pitchfork
+      thundercats organic pour-over unicorn lomo.
+    </p>
+    <p>
+      Ugh yr tacos aesthetic everyday carry, tumeric selvage cliche skateboard.
+      Wolf truffaut enamel pin vexillologist poutine. Hoodie roof party pabst,
+      cardigan letterpress af disrupt +1 subway tile chillwave live-edge
+      meggings next level readymade. Master cleanse gentrify hashtag, stumptown
+      fam single-origin coffee occupy dreamcatcher air plant viral vexillologist
+      enamel pin meggings. Tumblr chambray pickled microdosing austin scenester
+      green juice.
+    </p>
+    <p>
+      Austin four dollar toast church-key, vaporware hoodie edison bulb jean
+      shorts sustainable williamsburg plaid helvetica scenester lomo humblebrag.
+      Meditation tumblr kickstarter ennui williamsburg taiyaki pabst pour-over.
+      8-bit godard cred, chillwave enamel pin skateboard you probably haven't
+      heard of them. Meditation before they sold out single-origin coffee swag
+      try-hard jianbing slow-carb shaman leggings. Palo santo shabby chic
+      whatever man bun. Master cleanse wayfarers single-origin coffee pork belly
+      cronut, normcore cliche jianbing before they sold out tousled shabby chic
+      af pop-up gentrify. Direct trade la croix vexillologist jianbing,
+      flexitarian selvage try-hard stumptown polaroid shaman wayfarers poke
+      ramps food truck swag.
+    </p>
+    <p>
+      Pok pok lumbersexual wayfarers, direct trade leggings poutine truffaut
+      kitsch. Seitan aesthetic master cleanse squid coloring book banh mi YOLO
+      vegan locavore vexillologist readymade next level pop-up edison bulb.
+      Selvage knausgaard literally, quinoa photo booth 3 wolf moon microdosing
+      freegan yuccie. Truffaut gentrify lomo put a bird on it waistcoat. Ugh
+      austin distillery, tbh actually pork belly snackwave artisan mixtape
+      quinoa vexillologist pok pok polaroid listicle readymade.
+    </p>
+    <p>
+      Hammock letterpress prism dreamcatcher truffaut shabby chic vice
+      cold-pressed. Franzen pug fashion axe before they sold out, tumblr irony
+      kogi actually af bushwick banh mi. Snackwave bicycle rights tofu
+      dreamcatcher tote bag pour-over meditation raw denim fanny pack. Pop-up
+      retro taiyaki meditation twee gastropub VHS etsy. Semiotics gochujang
+      street art normcore, edison bulb farm-to-table pour-over taxidermy
+      brooklyn.
+    </p>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+    <a name="PhotoSection">
+      <h1>Photos</h1>
+    </a>
+    <div class="slidershow middle">
+
+      <div class="slides">
+        <input type="radio" name="r" id="r1" checked>
+        <input type="radio" name="r" id="r2">
+        <input type="radio" name="r" id="r3">
+        <input type="radio" name="r" id="r4">
+        <input type="radio" name="r" id="r5">
+        <div class="slide s1">
+          <img src="p5.jpeg" alt="">
+        </div>
+        <div class="slide">
+          <img src="p3.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="p4.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="p1.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="p6.jpeg" alt="">
+        </div>
+      </div>
+
+      <div class="navigation">
+        <label for="r1" class="bar"></label>
+        <label for="r2" class="bar"></label>
+        <label for="r3" class="bar"></label>
+        <label for="r4" class="bar"></label>
+        <label for="r5" class="bar"></label>
+      </div>
+    </div>
+
+ <br><br><br><br><br><br><br><br><br><br><br><br><br>
+ <a name="Music">
+  <h1>My Playlist</h1>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLK8ascc2dHEZ05D7mTWvoyFNwGtcOhl_K" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</a>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<a name="ContactMe">
+  <h1>Contact Me</h1>
+  <section>
+    <div class="container">
+      <form method="">
+        <div class="form-group">
+          <label for="FirstName">First Name</label>
+          <input type="text" name="FirstName" id="FirstName">
+        </div>
+
+        <div class="form-group">
+          <label for="LastName">Last Name</label>
+          <input type="text" name="LastName" id="LastName">
+        </div>
+
+        <div class="form-group">
+          <label for="Email">Email</label>
+          <input type="email" name="Email" id="Email">
+        </div>
+
+        <div class="form-group">
+          <label for="messege">Messege</label>
+          <textarea type="text" name="messege" id="messege" cols="30" rows="10"></textarea>
+        </div>
+        
+        <button type="submit">submit</button>
+        
+
+
+
+
+      </form>
+    </div>
+  </section>
+</a>
+
+  </main>
 </body>
-</html>
+

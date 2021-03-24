@@ -154,7 +154,7 @@
     </p>
   </article>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br>
     
     <a name="PhotoSection">
       <h1>Photos</h1>
@@ -193,12 +193,12 @@
       </div>
     </div>
 
- <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br>
  <a name="Music">
   <h1>My Playlist</h1>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLK8ascc2dHEZ05D7mTWvoyFNwGtcOhl_K" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </a>
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br>
 <a name="Like">
   <h1>Like </h1>
   <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fweb-development-environments-2021.github.io%2Fassignment1-ofekron33%2F%23&width=174&layout=button_count&action=like&size=large&share=true&height=46&appId" width="174" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
@@ -206,38 +206,39 @@
 
 </a>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br>
 <a name="QR">
 <h1>QR Code</h1>
 </a>
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br>
 
 <a name="ContactMe">
   <h1>Contact Me</h1>
   <section>
     <div class="container">
-      <form method="">
+      <form class="contact-form" action="contactform.php" method="post">
         <div class="form-group">
-          <label for="FirstName">First Name</label>
-          <input type="text" name="FirstName" id="FirstName">
+          <input type="text" name="name" placeholder="Full name">
         </div>
 
         <div class="form-group">
-          <label for="LastName">Last Name</label>
-          <input type="text" name="LastName" id="LastName">
+          <label for="Email">Your Email</label>
+          <input type="text" name="mail" placeholder="Your e-mail" >
         </div>
 
         <div class="form-group">
-          <label for="Email">Email</label>
-          <input type="email" name="Email" id="Email">
+          <label for="Subject" id="">Subject</label>
+          <input type="text" name="Subject" placeholder="Subject">
         </div>
+
+      
 
         <div class="form-group">
           <label for="messege">Messege</label>
           <textarea type="text" name="messege" id="messege" cols="30" rows="10"></textarea>
         </div>
         
-        <button type="submit">submit</button>
+        <button type="submit" name="submit">submit>
 
         
 
@@ -251,4 +252,18 @@
 
   </main>
 </body>
-
+<script>
+  
+  function mail() {
+    var link = "mailto:" + encodeURIComponent(document.getElementById('email').value)+
+             + "&subject=" + encodeURIComponent(document.getElementById('subject').value)
+             + "&body=" + encodeURIComponent(document.getElementById('mailcontant').value)
+    ;
+    var link = "mailto:me@example.com"+
+             "?cc=CCaddress@example.com"+
+             "&subject=" + escape("This is subject")+
+             "&body=" + escape("This is body");
+    window.location.href = link;
+}
+ 
+</script>

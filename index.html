@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -216,51 +217,64 @@
   <h1>Contact Me</h1>
   <section>
     <div class="container">
-      <form class="contact-form" action="contactform.php" method="post">
+      <form action="https://formspree.io/f/xeqvjzvw" method="POST" id="my-form">
+  
         <div class="form-group">
-          <input type="text" name="name" placeholder="Full name">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
         </div>
-
         <div class="form-group">
-          <input type="text" name="mail" placeholder="Your e-mail" >
+          <label for="Subject">Last Name</label>
+          <input type="text" id="lastName" name="lastName">
         </div>
-
         <div class="form-group">
-          <input type="text" name="Subject" placeholder="Subject">
+          <label for="massage">Massage</label>
+          <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
         </div>
-
-      
-
-        <div class="form-group">
-          <label for="messege">Messege</label>
-          <textarea type="text" name="messege" id="messege" cols="30" rows="10"></textarea>
-        </div>
-        
-        <button type="submit" name="submit">submit</button>
-
-        
-
-
-
+  
+        <button type="submit">Submit</button>
       </form>
     </div>
-  </section>
+    <div id="status"></div>
+  </section>  
 </a>
 
   </main>
 </body>
-<script>
   
-  function mail() {
-    var link = "mailto:" + encodeURIComponent(document.getElementById('email').value)+
-             + "&subject=" + encodeURIComponent(document.getElementById('subject').value)
-             + "&body=" + encodeURIComponent(document.getElementById('mailcontant').value)
-    ;
-    var link = "mailto:me@example.com"+
-             "?cc=CCaddress@example.com"+
-             "&subject=" + escape("This is subject")+
-             "&body=" + escape("This is body");
-    window.location.href = link;
-}
- 
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript">
+    function sendEmail(){
+      var name= $("#name");
+      var email= $("#email");
+      var subject= $("#subject");
+      var messege= $("#messege");
+    if(isNotEmpty(name)&& isNotEmpty(email)&& isNotEmpty(subject)&&isNotEmpty(messege)){
+      $.ajax({
+        url: 'contactform.php',
+        method: 'POST',
+        dataType: 'json',
+        data:{
+          name: name.val(),
+          email:email.val(),
+          subject: subject.val(),
+          messege: messege.val()},success:function(response){
+            $('#myForm')[0].reset();
+            $('.sent-notification').text("message sent successfully.");
+          }
+        });
+      }}
+
+    function isNotEmpty(caller){
+      if(caller.val()==""){
+        caller.css('border','1px solid red');
+        return false;
+      }
+      else{
+        caller.css('border', '');
+        return true;
+  }
+    }
 </script>
+</html>

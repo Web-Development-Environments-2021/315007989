@@ -343,4 +343,12 @@ button[type="submit"]:hover{
     background-color: rgb(214,226,236);
 }
 
+article{
+  width: 36em;
+  margin: 0 auto;
+  max-width: 100%;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
 
